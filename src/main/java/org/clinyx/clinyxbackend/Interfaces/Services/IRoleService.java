@@ -1,7 +1,7 @@
 package org.clinyx.clinyxbackend.Interfaces.Services;
 
-import org.clinyx.clinyxbackend.Dtos.RoleCreateDto;
-import org.clinyx.clinyxbackend.Dtos.RoleDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.RoleDtos.RoleCreateDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.RoleDtos.RoleDto;
 import org.clinyx.clinyxbackend.Entities.RoleEntity;
 
 import java.util.List;

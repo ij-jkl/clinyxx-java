@@ -1,7 +1,7 @@
 package org.clinyx.clinyxbackend.Services;
 
-import org.clinyx.clinyxbackend.Dtos.DoctorCreateDto;
-import org.clinyx.clinyxbackend.Dtos.DoctorDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.DoctorDtos.DoctorCreateDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.DoctorDtos.DoctorDto;
 import org.clinyx.clinyxbackend.Entities.DoctorEntity;
 import org.clinyx.clinyxbackend.Entities.HealthInsuranceEntity;
 import org.clinyx.clinyxbackend.Entities.SpecialtyEntity;

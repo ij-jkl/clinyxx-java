@@ -1,11 +1,16 @@
 package org.clinyx.clinyxbackend.Config;
 
-import org.clinyx.clinyxbackend.Dtos.*;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentCreateDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.DoctorDtos.DoctorDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.RoleDtos.RoleCreateDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.RoleDtos.RoleDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.UserDtos.UserCreateDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.UserDtos.UserDto;
 import org.clinyx.clinyxbackend.Entities.DoctorEntity;
 import org.clinyx.clinyxbackend.Entities.AppointmentEntity;
 import org.clinyx.clinyxbackend.Entities.RoleEntity;
 import org.clinyx.clinyxbackend.Entities.UserEntity;
-import org.modelmapper.Converter;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.PropertyMap;
 import org.springframework.context.annotation.Bean;

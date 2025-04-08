@@ -1,6 +1,6 @@
 package org.clinyx.clinyxbackend.Controllers;
 
-import org.clinyx.clinyxbackend.Dtos.SpecialtyRequestDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.SpecialtyDtos.SpecialtyRequestDto;
 import org.clinyx.clinyxbackend.Entities.SpecialtyEntity;
 import org.clinyx.clinyxbackend.Interfaces.Services.ISpecialtyService;
 import org.springframework.beans.factory.annotation.Autowired;

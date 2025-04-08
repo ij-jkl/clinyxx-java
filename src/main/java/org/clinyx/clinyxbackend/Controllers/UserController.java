@@ -1,7 +1,7 @@
 package org.clinyx.clinyxbackend.Controllers;
 
-import org.clinyx.clinyxbackend.Dtos.UserCreateDto;
-import org.clinyx.clinyxbackend.Dtos.UserDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.UserDtos.UserCreateDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.UserDtos.UserDto;
 import org.clinyx.clinyxbackend.Entities.UserEntity;
 import org.clinyx.clinyxbackend.Interfaces.Services.IUserService;
 import org.modelmapper.ModelMapper;

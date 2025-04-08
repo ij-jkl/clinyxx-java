@@ -1,7 +1,7 @@
 package org.clinyx.clinyxbackend.Controllers;
 
 import jakarta.validation.Valid;
-import org.clinyx.clinyxbackend.Dtos.HealthInsuranceDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.HealthInsuranceDtos.HealthInsuranceDto;
 import org.clinyx.clinyxbackend.Entities.HealthInsuranceEntity;
 import org.clinyx.clinyxbackend.Interfaces.Services.IHealthInsuranceService;
 import org.springframework.beans.factory.annotation.Autowired;

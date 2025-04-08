@@ -1,7 +1,7 @@
 package org.clinyx.clinyxbackend.Interfaces.Services;
 
-import org.clinyx.clinyxbackend.Dtos.UserCreateDto;
-import org.clinyx.clinyxbackend.Dtos.UserDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.UserDtos.UserCreateDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.UserDtos.UserDto;
 import org.clinyx.clinyxbackend.Entities.UserEntity;
 
 import java.util.List;

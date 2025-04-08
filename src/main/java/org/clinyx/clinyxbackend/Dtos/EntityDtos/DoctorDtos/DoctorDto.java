@@ -1,9 +1,11 @@
-package org.clinyx.clinyxbackend.Dtos;
+package org.clinyx.clinyxbackend.Dtos.EntityDtos.DoctorDtos;
 
 import lombok.Data;
 import java.math.BigDecimal;
 import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.HealthInsuranceDtos.HealthInsuranceDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.SpecialtyDtos.SpecialtyDto;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)

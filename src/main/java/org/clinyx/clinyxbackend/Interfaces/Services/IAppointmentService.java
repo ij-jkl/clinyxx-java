@@ -1,8 +1,8 @@
 package org.clinyx.clinyxbackend.Interfaces.Services;
 
-import org.clinyx.clinyxbackend.Dtos.AppointmentCreateDto;
-import org.clinyx.clinyxbackend.Dtos.AppointmentDto;
-import org.clinyx.clinyxbackend.Dtos.AppointmentUpdateDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentCreateDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentDto;
+import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentUpdateDto;
 import org.clinyx.clinyxbackend.Entities.AppointmentEntity;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.clinyx.clinyxbackend.Dtos;
+package org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos;
 
 import lombok.Getter;
 import lombok.Setter;

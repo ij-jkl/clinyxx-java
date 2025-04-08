@@ -1,9 +1,8 @@
-package org.clinyx.clinyxbackend.Dtos;
+package org.clinyx.clinyxbackend.Dtos.EntityDtos.DoctorDtos;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;
-import lombok.Data;
 
 import java.util.List;
 
