@@ -1,7 +1,7 @@
 package org.clinyx.clinyxbackend.Services;
 
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.RoleDtos.RoleCreateDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.RoleDtos.RoleDto;
+import org.clinyx.clinyxbackend.Dtos.RoleDtos.RoleCreateDto;
+import org.clinyx.clinyxbackend.Dtos.RoleDtos.RoleDto;
 import org.clinyx.clinyxbackend.Entities.RoleEntity;
 import org.clinyx.clinyxbackend.Exception.ResourceNotFoundException;
 import org.clinyx.clinyxbackend.Interfaces.Repository.IRoleRepository;

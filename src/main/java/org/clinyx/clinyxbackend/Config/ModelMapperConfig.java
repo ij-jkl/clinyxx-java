@@ -1,12 +1,12 @@
 package org.clinyx.clinyxbackend.Config;
 
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentCreateDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.DoctorDtos.DoctorDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.RoleDtos.RoleCreateDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.RoleDtos.RoleDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.UserDtos.UserCreateDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.UserDtos.UserDto;
+import org.clinyx.clinyxbackend.Dtos.AppointmentDtos.AppointmentCreateDto;
+import org.clinyx.clinyxbackend.Dtos.AppointmentDtos.AppointmentDto;
+import org.clinyx.clinyxbackend.Dtos.DoctorDtos.DoctorDto;
+import org.clinyx.clinyxbackend.Dtos.RoleDtos.RoleCreateDto;
+import org.clinyx.clinyxbackend.Dtos.RoleDtos.RoleDto;
+import org.clinyx.clinyxbackend.Dtos.UserDtos.UserCreateDto;
+import org.clinyx.clinyxbackend.Dtos.UserDtos.UserDto;
 import org.clinyx.clinyxbackend.Entities.DoctorEntity;
 import org.clinyx.clinyxbackend.Entities.AppointmentEntity;
 import org.clinyx.clinyxbackend.Entities.RoleEntity;

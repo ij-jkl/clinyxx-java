@@ -1,4 +1,4 @@
-package org.clinyx.clinyxbackend.Dtos.EntityDtos.SpecialtyDtos;
+package org.clinyx.clinyxbackend.Dtos.SpecialtyDtos;
 
 import lombok.Getter;
 import lombok.Setter;

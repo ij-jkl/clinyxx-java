@@ -1,7 +1,7 @@
 package org.clinyx.clinyxbackend.Interfaces.Services;
 
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.DoctorDtos.DoctorCreateDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.DoctorDtos.DoctorDto;
+import org.clinyx.clinyxbackend.Dtos.DoctorDtos.DoctorCreateDto;
+import org.clinyx.clinyxbackend.Dtos.DoctorDtos.DoctorDto;
 import org.clinyx.clinyxbackend.Entities.DoctorEntity;
 
 import java.util.List;

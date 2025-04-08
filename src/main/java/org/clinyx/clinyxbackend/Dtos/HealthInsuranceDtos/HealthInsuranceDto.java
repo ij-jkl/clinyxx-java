@@ -1,4 +1,4 @@
-package org.clinyx.clinyxbackend.Dtos.EntityDtos.HealthInsuranceDtos;
+package org.clinyx.clinyxbackend.Dtos.HealthInsuranceDtos;
 
 import lombok.Data;
 

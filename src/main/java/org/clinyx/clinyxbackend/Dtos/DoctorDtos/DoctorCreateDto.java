@@ -1,4 +1,4 @@
-package org.clinyx.clinyxbackend.Dtos.EntityDtos.DoctorDtos;
+package org.clinyx.clinyxbackend.Dtos.DoctorDtos;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

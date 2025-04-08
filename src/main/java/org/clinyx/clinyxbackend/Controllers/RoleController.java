@@ -1,7 +1,7 @@
 package org.clinyx.clinyxbackend.Controllers;
 
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.RoleDtos.RoleCreateDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.RoleDtos.RoleDto;
+import org.clinyx.clinyxbackend.Dtos.RoleDtos.RoleCreateDto;
+import org.clinyx.clinyxbackend.Dtos.RoleDtos.RoleDto;
 import org.clinyx.clinyxbackend.Entities.RoleEntity;
 import org.clinyx.clinyxbackend.Interfaces.Services.IRoleService;
 import org.modelmapper.ModelMapper;
@@ -44,7 +44,7 @@ public class RoleController {
         return new ResponseEntity<>(createdRole, HttpStatus.CREATED);
     }
 
-    @PutMapping("/update_role/{id}")
+    @PutMapping("/update_role_by_{id}")
     public ResponseEntity<RoleEntity> updateRole(@PathVariable Long id, @RequestBody RoleCreateDto roleCreateDto) {
         try {
             RoleEntity updatedRole = _roleService.updateRole(id, roleCreateDto);
@@ -54,7 +54,7 @@ public class RoleController {
         }
     }
 
-    @DeleteMapping("/delete_role/{id}")
+    @DeleteMapping("/delete_role_by_{id}")
     public ResponseEntity<Void> deleteRole(@PathVariable Long id) {
         _roleService.deleteRole(id);
         return ResponseEntity.noContent().build();

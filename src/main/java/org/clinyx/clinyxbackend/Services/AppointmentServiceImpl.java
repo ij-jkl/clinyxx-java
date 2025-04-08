@@ -1,8 +1,8 @@
 package org.clinyx.clinyxbackend.Services;
 
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentCreateDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentUpdateDto;
+import org.clinyx.clinyxbackend.Dtos.AppointmentDtos.AppointmentCreateDto;
+import org.clinyx.clinyxbackend.Dtos.AppointmentDtos.AppointmentDto;
+import org.clinyx.clinyxbackend.Dtos.AppointmentDtos.AppointmentUpdateDto;
 import org.clinyx.clinyxbackend.Entities.AppointmentEntity;
 import org.clinyx.clinyxbackend.Entities.DoctorEntity;
 import org.clinyx.clinyxbackend.Entities.UserEntity;

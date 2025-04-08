@@ -1,4 +1,4 @@
-package org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos;
+package org.clinyx.clinyxbackend.Dtos.AppointmentDtos;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
-public class AppointmentUpdateDto {
+public class AppointmentDto {
 
     private Long idAppointment;
     private Long userId;
@@ -15,5 +15,4 @@ public class AppointmentUpdateDto {
     private LocalDateTime appointmentDate;
     private String consultationReason;
     private String status;
-
 }

@@ -1,8 +1,8 @@
 package org.clinyx.clinyxbackend.Controllers;
 
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentCreateDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentDto;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.AppointmentDtos.AppointmentUpdateDto;
+import org.clinyx.clinyxbackend.Dtos.AppointmentDtos.AppointmentCreateDto;
+import org.clinyx.clinyxbackend.Dtos.AppointmentDtos.AppointmentDto;
+import org.clinyx.clinyxbackend.Dtos.AppointmentDtos.AppointmentUpdateDto;
 import org.clinyx.clinyxbackend.Entities.AppointmentEntity;
 import org.clinyx.clinyxbackend.Interfaces.Services.IAppointmentService;
 import org.modelmapper.ModelMapper;
@@ -45,7 +45,7 @@ public class AppointmentController {
         return new ResponseEntity<>(createdAppointment, HttpStatus.CREATED);
     }
 
-    @PutMapping("/update_appointment/{id}")
+    @PutMapping("/update_appointment_by_{id}")
     public ResponseEntity<AppointmentEntity> updateAppointment(@PathVariable Long id, @RequestBody AppointmentUpdateDto appointmentUpdateDto) {
         try {
             AppointmentEntity updatedAppointment = _appointmentService.updateAppointment(id, appointmentUpdateDto);
@@ -55,7 +55,7 @@ public class AppointmentController {
         }
     }
 
-    @DeleteMapping("/delete_appointment/{id}")
+    @DeleteMapping("/delete_appointment_by_{id}")
     public ResponseEntity<Void> deleteAppointment(@PathVariable Long id) {
         _appointmentService.deleteAppointment(id);
         return ResponseEntity.noContent().build();

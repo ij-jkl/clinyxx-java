@@ -1,7 +1,7 @@
 package org.clinyx.clinyxbackend.Controllers;
 
 import jakarta.validation.Valid;
-import org.clinyx.clinyxbackend.Dtos.EntityDtos.HealthInsuranceDtos.HealthInsuranceDto;
+import org.clinyx.clinyxbackend.Dtos.HealthInsuranceDtos.HealthInsuranceDto;
 import org.clinyx.clinyxbackend.Entities.HealthInsuranceEntity;
 import org.clinyx.clinyxbackend.Interfaces.Services.IHealthInsuranceService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,20 +23,20 @@ public class HealthInsuranceController {
         this.healthInsuranceService = healthInsuranceService;
     }
 
-    @GetMapping
+    @GetMapping("get_all_health_insurances")
     public ResponseEntity<List<HealthInsuranceEntity>> getAllHealthInsurances() {
         List<HealthInsuranceEntity> healthInsurances = healthInsuranceService.getAllHealthInsurances();
         return new ResponseEntity<>(healthInsurances, HttpStatus.OK);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("get_health_insurances_by_{id}")
     public ResponseEntity<HealthInsuranceEntity> getHealthInsuranceById(@PathVariable Integer id) {
         Optional<HealthInsuranceEntity> healthInsurance = healthInsuranceService.getHealthInsuranceById(id);
         return healthInsurance.map(insurance -> new ResponseEntity<>(insurance, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
-    @PostMapping
+    @PostMapping("create_health_insurance")
     public ResponseEntity<HealthInsuranceEntity> createHealthInsurance(@Valid @RequestBody HealthInsuranceDto healthInsuranceDto) {
         HealthInsuranceEntity healthInsurance = new HealthInsuranceEntity();
         healthInsurance.setInsuranceName(healthInsuranceDto.getInsuranceName());
@@ -44,7 +44,7 @@ public class HealthInsuranceController {
         return new ResponseEntity<>(createdInsurance, HttpStatus.CREATED);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/update_health_insurance_by_{id}")
     public ResponseEntity<HealthInsuranceEntity> updateHealthInsurance(@PathVariable Integer id, @Valid @RequestBody HealthInsuranceDto healthInsuranceDto) {
         HealthInsuranceEntity healthInsurance = new HealthInsuranceEntity();
         healthInsurance.setInsuranceName(healthInsuranceDto.getInsuranceName());
@@ -57,7 +57,7 @@ public class HealthInsuranceController {
         }
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete_health_insurance_by_{id}")
     public ResponseEntity<Void> deleteHealthInsurance(@PathVariable Integer id) {
         healthInsuranceService.deleteHealthInsurance(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
